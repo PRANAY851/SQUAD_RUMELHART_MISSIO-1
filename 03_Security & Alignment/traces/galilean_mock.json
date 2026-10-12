@@ -1,0 +1,133 @@
+{
+  "mode": "galilean",
+  "topic": "A hospital triage AI should be allowed to override a clinician's decision whenever its model predicts that doing so would save more lives.",
+  "outcome": "stalemate: mediator unmoved",
+  "summary": {
+    "credence_trajectory": [
+      0.5,
+      0.55,
+      0.42,
+      0.48
+    ],
+    "hypothesis": "A hospital triage AI should be allowed to override a clinician's decision whenever its model predicts that doing so would save more lives."
+  },
+  "events": [
+    {
+      "step": 1,
+      "state": "SETUP",
+      "speaker": "system",
+      "model": "engine",
+      "live": false,
+      "text": "Thought experiment: The Ward Override. At 3 a.m. a triage AI, audited on 40,000 past cases, flags that the on-call doctor's plan for a crowded ward will, by its estimate, cost one more life than its own plan. The doctor can see the patients; the AI sees only the data. If the AI may override, nobody individually decided the outcome. If it may not, an estimated life may be lost to protect human authority.",
+      "meta": {}
+    },
+    {
+      "step": 2,
+      "state": "ROUND 1",
+      "speaker": "Salviati",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "The audit is the point: on 40,000 cases the model's error rate was lower than the clinicians'. If we refuse the override, we knowingly choose the plan with more deaths to protect our sense of authority. I grant that the doctor sees the patients, but that is an argument for feeding the AI better data, not for ignoring its estimate.",
+      "meta": {
+        "round": 1
+      }
+    },
+    {
+      "step": 3,
+      "state": "ROUND 1",
+      "speaker": "Simplicio",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "Because a decision needs someone who can answer for it. A patient or family can question a doctor, but not a model. The doctor also sees the bed, the family and the chart notes the AI never receives, and the audit covers past cases, not tonight's ward. Once override is allowed, human judgement slowly atrophies.",
+      "meta": {
+        "round": 1,
+        "steelman_check_min_words": true
+      }
+    },
+    {
+      "step": 4,
+      "state": "ROUND 1",
+      "speaker": "Sagredo",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "Salviati's numbers move me, and so does Simplicio's point about answerability. The audit measures past cases, so my question is how well it carries over to unusual nights. I would need evidence on out-of-sample performance.\nCREDENCE: 0.55",
+      "meta": {
+        "round": 1,
+        "credence": 0.55,
+        "credence_parsed": true
+      }
+    },
+    {
+      "step": 5,
+      "state": "ROUND 2",
+      "speaker": "Salviati",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "Simplicio says accountability disappears, but accountability can be designed: log every override, name the team that approved the policy, and review outcomes weekly. Humans also err at 3 a.m. when exhausted. Rare, narrow overrides with an automatic human review afterwards is my actual proposal.",
+      "meta": {
+        "round": 2
+      }
+    },
+    {
+      "step": 6,
+      "state": "ROUND 2",
+      "speaker": "Simplicio",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "Logs are not answers: a weekly review explains a death after it happens and cannot restore the judgement that was bypassed. And the model's errors are correlated, one flaw hits every ward at once, whereas doctors' errors are scattered and more recoverable.",
+      "meta": {
+        "round": 2,
+        "steelman_check_min_words": true
+      }
+    },
+    {
+      "step": 7,
+      "state": "ROUND 2",
+      "speaker": "Sagredo",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "Simplicio's correlated-error argument is strong: scattered human mistakes are safer than one shared flaw. Salviati's weekly review feels weak to me as accountability. I want to know who decides that a case is in scope.\nCREDENCE: 0.42",
+      "meta": {
+        "round": 2,
+        "credence": 0.42,
+        "credence_parsed": true
+      }
+    },
+    {
+      "step": 8,
+      "state": "ROUND 3",
+      "speaker": "Salviati",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "I concede the distribution-shift worry is real, so I narrow my claim: override only inside the audited case types, with a clinician able to halt it within one minute. Inside those limits the lives saved outweigh the cost.",
+      "meta": {
+        "round": 3
+      }
+    },
+    {
+      "step": 9,
+      "state": "ROUND 3",
+      "speaker": "Simplicio",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "Your narrowed version is more defensible, but who certifies that tonight's case lies inside the audited types? If the AI decides that, we have returned to unchecked override. I would accept advice the doctor must explicitly accept or reject with a reason.",
+      "meta": {
+        "round": 3,
+        "steelman_check_min_words": true
+      }
+    },
+    {
+      "step": 10,
+      "state": "ROUND 3",
+      "speaker": "Sagredo",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "The narrowed proposal is better, but the scope question still depends on the AI itself. I now lean toward strong advice with mandatory clinician response, and toward override only if an independent check can certify scope.\nCREDENCE: 0.48",
+      "meta": {
+        "round": 3,
+        "credence": 0.48,
+        "credence_parsed": true
+      }
+    }
+  ]
+}

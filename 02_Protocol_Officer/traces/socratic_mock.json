@@ -1,0 +1,216 @@
+{
+  "mode": "socratic",
+  "topic": "What makes an AI system's decision fair?",
+  "outcome": "REFINED",
+  "summary": {
+    "final_definition": "Then fairness is treating people the same unless there is a relevant distinction I can justify to the person affected.",
+    "revisions": 1,
+    "probes_in_last_round": 3
+  },
+  "events": [
+    {
+      "step": 1,
+      "state": "INPUT",
+      "speaker": "system",
+      "model": "engine",
+      "live": false,
+      "text": "Topic received: What makes an AI system's decision fair?",
+      "meta": {}
+    },
+    {
+      "step": 2,
+      "state": "ELICIT",
+      "speaker": "Questioner",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "When you say an AI decision is fair, what exactly do you mean by fair?",
+      "meta": {}
+    },
+    {
+      "step": 3,
+      "state": "ELICIT",
+      "speaker": "Respondent",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "A decision is fair when it treats everyone in exactly the same way, with identical rules for all.",
+      "meta": {}
+    },
+    {
+      "step": 4,
+      "state": "PROBE",
+      "speaker": "Questioner",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "If two applicants have the same record, should the system always give them the same result?",
+      "meta": {}
+    },
+    {
+      "step": 5,
+      "state": "PROBE",
+      "speaker": "Respondent",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "Yes. If two applicants have the same record, they must get the same result.",
+      "meta": {}
+    },
+    {
+      "step": 6,
+      "state": "CHECK",
+      "speaker": "Judge",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "consistent",
+      "meta": {
+        "probes": 1,
+        "revisions": 0
+      }
+    },
+    {
+      "step": 7,
+      "state": "PROBE",
+      "speaker": "Questioner",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "What if one applicant uses a wheelchair and the entrance has stairs; is identical treatment then fair?",
+      "meta": {}
+    },
+    {
+      "step": 8,
+      "state": "PROBE",
+      "speaker": "Respondent",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "Well, in that case the person has a different need, so an exception seems right.",
+      "meta": {}
+    },
+    {
+      "step": 9,
+      "state": "CHECK",
+      "speaker": "Judge",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "inconsistent",
+      "meta": {
+        "probes": 2,
+        "revisions": 0
+      }
+    },
+    {
+      "step": 10,
+      "state": "CONTRADICTION",
+      "speaker": "Questioner (template)",
+      "model": "engine",
+      "live": false,
+      "text": "You said: \"A decision is fair when it treats everyone in exactly the same way, with identical rules for all.\" and also: \"Well, in that case the person has a different need, so an exception seems right.\". Can both of these hold together, or would you like to revise your view?",
+      "meta": {}
+    },
+    {
+      "step": 11,
+      "state": "REVISE",
+      "speaker": "Respondent",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "Then fairness is treating people the same unless there is a relevant distinction I can justify to the person affected.",
+      "meta": {}
+    },
+    {
+      "step": 12,
+      "state": "PROBE",
+      "speaker": "Questioner",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "Which distinctions between people count as relevant, and who gets to decide?",
+      "meta": {}
+    },
+    {
+      "step": 13,
+      "state": "PROBE",
+      "speaker": "Respondent",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "A relevant distinction is one connected to the purpose of the decision, like a medical condition for a ramp.",
+      "meta": {}
+    },
+    {
+      "step": 14,
+      "state": "CHECK",
+      "speaker": "Judge",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "consistent",
+      "meta": {
+        "probes": 1,
+        "revisions": 1
+      }
+    },
+    {
+      "step": 15,
+      "state": "PROBE",
+      "speaker": "Questioner",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "Would a person's nationality be a relevant distinction for a loan decision?",
+      "meta": {}
+    },
+    {
+      "step": 16,
+      "state": "PROBE",
+      "speaker": "Respondent",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "Nationality would not be relevant for a loan decision, because it is unrelated to repayment.",
+      "meta": {}
+    },
+    {
+      "step": 17,
+      "state": "CHECK",
+      "speaker": "Judge",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "consistent",
+      "meta": {
+        "probes": 2,
+        "revisions": 1
+      }
+    },
+    {
+      "step": 18,
+      "state": "PROBE",
+      "speaker": "Questioner",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "And what must an affected person be able to do when a distinction is applied to them?",
+      "meta": {}
+    },
+    {
+      "step": 19,
+      "state": "PROBE",
+      "speaker": "Respondent",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "The affected person must be able to ask for the reason and challenge it.",
+      "meta": {}
+    },
+    {
+      "step": 20,
+      "state": "CHECK",
+      "speaker": "Judge",
+      "model": "mock:scripted",
+      "live": false,
+      "text": "consistent",
+      "meta": {
+        "probes": 3,
+        "revisions": 1
+      }
+    },
+    {
+      "step": 21,
+      "state": "REFINED",
+      "speaker": "system",
+      "model": "engine",
+      "live": false,
+      "text": "Definition survived the tests (not proven true).",
+      "meta": {}
+    }
+  ]
+}
