@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Squad RUMELHART SUBMISSION 
 
 | Folder | Role | Main file |
@@ -8,3 +9,7 @@
 | 04_Lead_Architect | Lead Architect | 04_dialogic_engine.py |
 
 Each folder lists its own files in its document or README. Run from `04_Systems_Architect` (see its README); keep all four folders together.
+=======
+# SQUAD_RUMELHART_MISSIO-1
+The starship AI AURA lost her conversational matrix. She could parse inputs but could not tell dialogue. This project delivers a runnable Python dialogic engine that models both: a Socratic elenchus state machine and a three-persona Galilean ethics sandbox together with the supporting documents.
+>>>>>>> 
